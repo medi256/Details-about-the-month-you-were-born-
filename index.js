@@ -28,7 +28,7 @@ const obj = {
 };
 
 btn.addEventListener("click", () => {
-  if (obj.hasOwnProperty(input.value) === true) {
+  if (obj.hasOwnProperty(input.value.toLowerCase) === true) {
     text.innerHTML = obj[input.value];
     month.innerHTML = input.value;
   } else {
